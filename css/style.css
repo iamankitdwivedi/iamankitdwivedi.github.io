@@ -20,7 +20,7 @@ body {
     background-color: #121212;
 }
 
-a, li, button {
+a, button {
     text-decoration: none;
     color: var(--white);
     font-size: 16px;
@@ -60,7 +60,7 @@ header {
 
 
 
-main {
+.hero {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -75,7 +75,7 @@ main {
 
 
 
-main span {
+.hero span {
     display: inline-flex;
     opacity: 0;
     transition: all 0.5s ease;
@@ -99,11 +99,8 @@ span.entry {
 /* ==========================MEDIA QUERIES=============================== */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    main {
-        font-size: 28px;
-    }
-    nav {
-        display: none;
+    .hero {
+        font-size: 2em;
     }
   }
 
